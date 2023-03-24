@@ -1,0 +1,15 @@
+void walkTheLabyrinth(){
+    while(!onBeeper()){
+        if(frontIsClear()){
+            moveForward();
+        }
+        else if(rightIsClear()){
+            turnRight();
+            moveForward();
+        }
+        else{
+            turnLeft();
+            moveForward();
+        }
+    }
+}
