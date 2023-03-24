@@ -1,0 +1,27 @@
+void hangTheLampions(){
+    repeat(9){
+        pickBeeper();
+        turnLeft();
+        while(frontIsClear()){
+            moveForward();
+        }
+        dropBeeper();
+        turnAround();
+        while(frontIsClear()){
+            moveForward();
+        }
+        turnLeft();
+        moveForward();
+    }
+    pickBeeper();
+    turnLeft();
+    while(frontIsClear()){
+        moveForward();
+    }
+    dropBeeper();
+    turnAround();
+    while(frontIsClear()){
+        moveForward();
+    }
+    turnLeft();
+}
