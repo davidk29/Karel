@@ -1,0 +1,12 @@
+void increment(){
+    while(onBeeper()){
+        if(onBeeper()){
+            pickBeeper();
+            moveForward();
+        }
+        else{
+            dropBeeper();
+        }
+    }
+    dropBeeper();
+}
